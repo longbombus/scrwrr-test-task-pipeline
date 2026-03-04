@@ -10,7 +10,7 @@ class ValidationRule:
         self.matcher = matcher
         self.checker = checker
 
-rules : list[ValidationRule] = [
+RULES : list[ValidationRule] = [
     ValidationRule(
         matcher=lambda asset: isinstance(asset, assets.MeshInfo),
         checker=lambda asset: ValidationAlert("Error", f"VertexCount {asset.vertices} > 10000") if asset.vertices > 10000 else None
@@ -44,7 +44,7 @@ rules : list[ValidationRule] = [
 def validate(assets_infos : list[assets.AssetInfo]) -> dict[str, list[(assets.AssetInfo, ValidationAlert)]]:
     alerts: dict[str, list[(assets.AssetInfo, ValidationAlert)]] = {}
     for asset_info in assets_infos:
-        for rule in rules:
+        for rule in RULES:
             if rule.matcher(asset_info):
                 result : ValidationAlert = rule.checker(asset_info)
                 if result is not None:
