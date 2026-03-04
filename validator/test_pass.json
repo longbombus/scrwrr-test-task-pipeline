@@ -1,0 +1,33 @@
+{
+    "assets":
+    [
+        {
+            "type": "mesh",
+            "name": "SM_Stone",
+            "vertices": 30,
+            "triangles": 60,
+            "materials": 1
+        },
+        {
+            "type": "texture",
+            "name": "T_Stone_Albedo",
+            "width": 64,
+            "height": 64,
+            "fileSize": 32768
+        },
+        {
+            "type": "texture",
+            "name": "T_Stone_Normal",
+            "width": 64,
+            "height": 64,
+            "fileSize": 32768
+        },
+        {
+            "type": "texture",
+            "name": "T_Stone_Roughness",
+            "width": 64,
+            "height": 64,
+            "fileSize": 16536
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "assets":
+    [
+        {
+            "type": "mesh",
+            "name": "Stone",
+            "vertices": 1000000,
+            "triangles": 2500000,
+            "materials": 8
+        },
+        {
+            "type": "texture",
+            "name": "T_Stone_Albedo",
+            "width": 1024,
+            "height": 1024,
+            "fileSize": 1024
+        },
+        {
+            "type": "texture",
+            "name": "T_Stone_Normal",
+            "width": 9998,
+            "height": 3568,
+            "fileSize": 16777216
+        },
+        {
+            "type": "texture",
+            "name": "T_Stone_Roughness",
+            "width": 16,
+            "height": 1024,
+            "fileSize": 30000
+        }
+    ]
+}
